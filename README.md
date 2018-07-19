@@ -1,6 +1,6 @@
 # PickerTableViewCell
 封装弹出选择试图的tableviewcell
-
+![image](https://github.com/make1a/PickerTableViewCell/blob/master/aaa-2.gif)
 
 ### 选择日期DatePickerCell的使用：
 ```
@@ -27,18 +27,16 @@ cell.selectClickPickerBlock = ^(NSInteger index, NSString *str) {
      [weakCell setDetailTitle:[selectArray componentsJoinedByString:@""]];
  };
 ```
-接口：
-```
-/**
- selectArray = [@"a",@"2",@"🐶"];
- */
-@property (nonatomic,copy)void (^selectPickerViewBlock)(NSArray *selectArray);
 
-/**
- @param dataSource @[@[@"a",@"b",@"c",@"d"],@[@"1",@"2",@"3",@"4"],@[@"🐔",@"🐶",@"🐖",@"🐂"]]
- */
-+ (instancetype)dequeueReusableWithTableView:(UITableView *)tableView withDataSource:(NSArray *)dataSource;
+```
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+
+    [cell becomeFirstResponder];
+}
 
 ```
 
-![image](https://github.com/make1a/PickerTableViewCell/blob/master/aaa-2.gif)
+
+
