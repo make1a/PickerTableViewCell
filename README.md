@@ -2,7 +2,7 @@
 封装弹出选择试图的tableviewcell
 
 
-###选择日期DatePickerCell的使用：
+### 选择日期DatePickerCell的使用：
 ```
         DatePickerCell *cell = [DatePickerCell dequeueReusableWithTableView:tableView];
         cell.selectDatePickerBlock = ^(NSDate *date) {
@@ -10,7 +10,7 @@
         };
 ```
 
-###弹出点击选择ClickPickerCell：
+### 弹出点击选择ClickPickerCell：
 ```
         ClickPickerCell *cell = [ClickPickerCell dequeueReusableWithTableView:tableView dataSource:@[@"男",@"女",@"ladyBoy"]];
         __weak typeof (cell)weakCell = cell;
@@ -19,7 +19,7 @@
         };
 ```
 
-###滑动选择PickerViewCell：
+### 滑动选择PickerViewCell：
 ```
         PickerViewCell *cell = [PickerViewCell dequeueReusableWithTableView:tableView withDataSource:@[@[@"a",@"b",@"c",@"d"],@[@"1",@"2",@"3",@"4"],@[@"🐔",@"🐶",@"🐖",@"🐂"]]];
 
