@@ -15,6 +15,22 @@
 		2603EA4520FF21B1007BF05D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EA4420FF21B1007BF05D /* main.m */; };
 		2603EA4F20FF21B1007BF05D /* MKInputViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EA4E20FF21B1007BF05D /* MKInputViewDemoTests.m */; };
 		2603EA5A20FF21B1007BF05D /* MKInputViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EA5920FF21B1007BF05D /* MKInputViewDemoUITests.m */; };
+		2603EA6A20FF26AD007BF05D /* DatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EA6920FF26AD007BF05D /* DatePickerCell.m */; };
+		2603EA6E20FF2FEF007BF05D /* ClickPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EA6D20FF2FEF007BF05D /* ClickPickerCell.m */; };
+		2603EAB120FF328B007BF05D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EA9820FF328B007BF05D /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		2603EAB220FF328B007BF05D /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAA120FF328B007BF05D /* ViewController+MASAdditions.m */; };
+		2603EAB320FF328B007BF05D /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAA520FF328B007BF05D /* MASCompositeConstraint.m */; };
+		2603EAB420FF328B007BF05D /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAA620FF328B007BF05D /* MASConstraintMaker.m */; };
+		2603EAB520FF328B007BF05D /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAA720FF328B007BF05D /* MASLayoutConstraint.m */; };
+		2603EAB620FF328B007BF05D /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAA820FF328B007BF05D /* NSArray+MASAdditions.m */; };
+		2603EAB720FF328B007BF05D /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAA920FF328B007BF05D /* View+MASAdditions.m */; };
+		2603EAB820FF328B007BF05D /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAAC20FF328B007BF05D /* MASConstraint.m */; };
+		2603EAB920FF328B007BF05D /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAAE20FF328B007BF05D /* MASViewConstraint.m */; };
+		2603EABA20FF328B007BF05D /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAAF20FF328B007BF05D /* MASViewAttribute.m */; };
+		2603EABB20FF328B007BF05D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2603EAB020FF328B007BF05D /* Info.plist */; };
+		263501E52100237000585BE4 /* PickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 263501E42100237000585BE4 /* PickerViewCell.m */; };
+		263501E92100729000585BE4 /* MKDatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263501E82100729000585BE4 /* MKDatePickerCell.swift */; };
+		263501F52100897000585BE4 /* MKClickPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263501F42100897000585BE4 /* MKClickPickerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +67,41 @@
 		2603EA5520FF21B1007BF05D /* MKInputViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKInputViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2603EA5920FF21B1007BF05D /* MKInputViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKInputViewDemoUITests.m; sourceTree = "<group>"; };
 		2603EA5B20FF21B1007BF05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2603EA6820FF26AD007BF05D /* DatePickerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerCell.h; sourceTree = "<group>"; };
+		2603EA6920FF26AD007BF05D /* DatePickerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerCell.m; sourceTree = "<group>"; };
+		2603EA6C20FF2FEF007BF05D /* ClickPickerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickPickerCell.h; sourceTree = "<group>"; };
+		2603EA6D20FF2FEF007BF05D /* ClickPickerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickPickerCell.m; sourceTree = "<group>"; };
+		2603EA9720FF328B007BF05D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		2603EA9820FF328B007BF05D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		2603EA9920FF328B007BF05D /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		2603EA9A20FF328B007BF05D /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		2603EA9B20FF328B007BF05D /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		2603EA9C20FF328B007BF05D /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		2603EA9D20FF328B007BF05D /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		2603EA9E20FF328B007BF05D /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		2603EA9F20FF328B007BF05D /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		2603EAA020FF328B007BF05D /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		2603EAA120FF328B007BF05D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		2603EAA220FF328B007BF05D /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		2603EAA320FF328B007BF05D /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		2603EAA420FF328B007BF05D /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		2603EAA520FF328B007BF05D /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		2603EAA620FF328B007BF05D /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		2603EAA720FF328B007BF05D /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		2603EAA820FF328B007BF05D /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		2603EAA920FF328B007BF05D /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		2603EAAA20FF328B007BF05D /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		2603EAAB20FF328B007BF05D /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		2603EAAC20FF328B007BF05D /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		2603EAAD20FF328B007BF05D /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		2603EAAE20FF328B007BF05D /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		2603EAAF20FF328B007BF05D /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		2603EAB020FF328B007BF05D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		263501E32100237000585BE4 /* PickerViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewCell.h; sourceTree = "<group>"; };
+		263501E42100237000585BE4 /* PickerViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewCell.m; sourceTree = "<group>"; };
+		263501E72100729000585BE4 /* MKInputViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKInputViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		263501E82100729000585BE4 /* MKDatePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKDatePickerCell.swift; sourceTree = "<group>"; };
+		263501F42100897000585BE4 /* MKClickPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKClickPickerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +152,8 @@
 		2603EA3420FF21B0007BF05D /* MKInputViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				263501E72100729000585BE4 /* MKInputViewDemo-Bridging-Header.h */,
+				2603EA9620FF328B007BF05D /* Masonry */,
 				2603EA3520FF21B0007BF05D /* AppDelegate.h */,
 				2603EA3620FF21B0007BF05D /* AppDelegate.m */,
 				2603EA3820FF21B0007BF05D /* ViewController.h */,
@@ -110,6 +163,14 @@
 				2603EA4020FF21B1007BF05D /* LaunchScreen.storyboard */,
 				2603EA4320FF21B1007BF05D /* Info.plist */,
 				2603EA4420FF21B1007BF05D /* main.m */,
+				2603EA6820FF26AD007BF05D /* DatePickerCell.h */,
+				2603EA6920FF26AD007BF05D /* DatePickerCell.m */,
+				2603EA6C20FF2FEF007BF05D /* ClickPickerCell.h */,
+				2603EA6D20FF2FEF007BF05D /* ClickPickerCell.m */,
+				263501E32100237000585BE4 /* PickerViewCell.h */,
+				263501E42100237000585BE4 /* PickerViewCell.m */,
+				263501E82100729000585BE4 /* MKDatePickerCell.swift */,
+				263501F42100897000585BE4 /* MKClickPickerCell.swift */,
 			);
 			path = MKInputViewDemo;
 			sourceTree = "<group>";
@@ -130,6 +191,40 @@
 				2603EA5B20FF21B1007BF05D /* Info.plist */,
 			);
 			path = MKInputViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		2603EA9620FF328B007BF05D /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				2603EA9720FF328B007BF05D /* MASCompositeConstraint.h */,
+				2603EA9820FF328B007BF05D /* NSLayoutConstraint+MASDebugAdditions.m */,
+				2603EA9920FF328B007BF05D /* MASConstraint+Private.h */,
+				2603EA9A20FF328B007BF05D /* MASLayoutConstraint.h */,
+				2603EA9B20FF328B007BF05D /* NSArray+MASShorthandAdditions.h */,
+				2603EA9C20FF328B007BF05D /* MASConstraintMaker.h */,
+				2603EA9D20FF328B007BF05D /* View+MASAdditions.h */,
+				2603EA9E20FF328B007BF05D /* NSArray+MASAdditions.h */,
+				2603EA9F20FF328B007BF05D /* MASUtilities.h */,
+				2603EAA020FF328B007BF05D /* MASViewAttribute.h */,
+				2603EAA120FF328B007BF05D /* ViewController+MASAdditions.m */,
+				2603EAA220FF328B007BF05D /* MASViewConstraint.h */,
+				2603EAA320FF328B007BF05D /* MASConstraint.h */,
+				2603EAA420FF328B007BF05D /* NSLayoutConstraint+MASDebugAdditions.h */,
+				2603EAA520FF328B007BF05D /* MASCompositeConstraint.m */,
+				2603EAA620FF328B007BF05D /* MASConstraintMaker.m */,
+				2603EAA720FF328B007BF05D /* MASLayoutConstraint.m */,
+				2603EAA820FF328B007BF05D /* NSArray+MASAdditions.m */,
+				2603EAA920FF328B007BF05D /* View+MASAdditions.m */,
+				2603EAAA20FF328B007BF05D /* View+MASShorthandAdditions.h */,
+				2603EAAB20FF328B007BF05D /* Masonry.h */,
+				2603EAAC20FF328B007BF05D /* MASConstraint.m */,
+				2603EAAD20FF328B007BF05D /* ViewController+MASAdditions.h */,
+				2603EAAE20FF328B007BF05D /* MASViewConstraint.m */,
+				2603EAAF20FF328B007BF05D /* MASViewAttribute.m */,
+				2603EAB020FF328B007BF05D /* Info.plist */,
+			);
+			name = Masonry;
+			path = Masonry/Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +294,7 @@
 				TargetAttributes = {
 					2603EA3120FF21B0007BF05D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					2603EA4920FF21B1007BF05D = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -235,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2603EABB20FF328B007BF05D /* Info.plist in Resources */,
 				2603EA4220FF21B1007BF05D /* LaunchScreen.storyboard in Resources */,
 				2603EA3F20FF21B1007BF05D /* Assets.xcassets in Resources */,
 				2603EA3D20FF21B0007BF05D /* Main.storyboard in Resources */,
@@ -262,9 +359,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263501E92100729000585BE4 /* MKDatePickerCell.swift in Sources */,
 				2603EA3A20FF21B0007BF05D /* ViewController.m in Sources */,
 				2603EA4520FF21B1007BF05D /* main.m in Sources */,
+				263501F52100897000585BE4 /* MKClickPickerCell.swift in Sources */,
+				2603EAB520FF328B007BF05D /* MASLayoutConstraint.m in Sources */,
 				2603EA3720FF21B0007BF05D /* AppDelegate.m in Sources */,
+				2603EA6A20FF26AD007BF05D /* DatePickerCell.m in Sources */,
+				2603EABA20FF328B007BF05D /* MASViewAttribute.m in Sources */,
+				2603EAB620FF328B007BF05D /* NSArray+MASAdditions.m in Sources */,
+				2603EAB320FF328B007BF05D /* MASCompositeConstraint.m in Sources */,
+				2603EAB420FF328B007BF05D /* MASConstraintMaker.m in Sources */,
+				2603EAB720FF328B007BF05D /* View+MASAdditions.m in Sources */,
+				2603EAB220FF328B007BF05D /* ViewController+MASAdditions.m in Sources */,
+				2603EA6E20FF2FEF007BF05D /* ClickPickerCell.m in Sources */,
+				2603EAB920FF328B007BF05D /* MASViewConstraint.m in Sources */,
+				263501E52100237000585BE4 /* PickerViewCell.m in Sources */,
+				2603EAB120FF328B007BF05D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				2603EAB820FF328B007BF05D /* MASConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +545,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = MKInputViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,6 +555,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.MKInputViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MKInputViewDemo/MKInputViewDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -449,7 +566,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = MKInputViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +576,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.MKInputViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MKInputViewDemo/MKInputViewDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -464,6 +585,7 @@
 		2603EA6220FF21B1007BF05D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MKInputViewDemoTests/Info.plist;
@@ -482,6 +604,7 @@
 		2603EA6320FF21B1007BF05D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MKInputViewDemoTests/Info.plist;
@@ -500,6 +623,7 @@
 		2603EA6520FF21B1007BF05D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MKInputViewDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -517,6 +641,7 @@
 		2603EA6620FF21B1007BF05D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MKInputViewDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
