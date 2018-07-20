@@ -1,7 +1,8 @@
 # PickerTableViewCell
-封装弹出选择试图的tableviewcell
-![image](https://github.com/make1a/PickerTableViewCell/blob/master/aaa-2.gif)
+封装弹出选择试图的tableviewcell OC和Swift两个版本
+![image](https://github.com/make1a/PickerTableViewCell/blob/master/a5677f33c60e4242e2b8fe44389ee895.GIF)
 
+## OC:
 ### 选择日期DatePickerCell的使用：
 ```
  DatePickerCell *cell = [DatePickerCell dequeueReusableWithTableView:tableView];
@@ -38,5 +39,43 @@ cell.selectClickPickerBlock = ^(NSInteger index, NSString *str) {
 
 ```
 
+## Swift:
 
+```
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let cell = MKDatePickerCell.dequeueReusable(WithTableView: tableView)
+            cell.datePickerSelectBlock = {
+               print($0)
+            }
+            return cell
+        }else if indexPath.row == 1 {
+
+            let cell = MKClickPickerCell.dequeueReusable(WithTableView: tableView, dataSource: array1)
+            cell.selectClickPickerBlock = {
+               print("index = \($0),str = \($1)")
+            }
+            return cell
+            
+        }else{
+            let cell = MKPickerViewCell.dequeueReusable(WithTableView: tableView, dataSource: array2)
+            cell.selectPickerViewBlock = { array in
+              print(array.joined())  
+            }
+            return cell
+        }
+
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let celll = tableView.cellForRow(at: indexPath)
+        guard let cell = celll else { return }
+        if cell.isFirstResponder {
+            cell.resignFirstResponder()
+        }else{
+            cell.becomeFirstResponder()
+        }
+    }
+
+```
 
