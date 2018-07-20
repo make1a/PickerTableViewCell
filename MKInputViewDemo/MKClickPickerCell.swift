@@ -19,13 +19,7 @@ class MKClickPickerCell: UITableViewCell {
     
     var selectClickPickerBlock: ((_ index: Int,Any)->Void)?
     
-    private var dataSource: [String]?
-    
-    private lazy var height: Int = {
-        let height = ((self.dataSource?.count)! + 1) * 48 + 20
-        return height
-    }()
-    
+    var dataSource: [String]?
     
     private lazy var myInputView: UIView = {
         let view = UIView.init(frame: CGRect.init(x: 0, y: 0, width: Int(UIScreen.main.bounds.size.width), height: self.height))
@@ -91,21 +85,32 @@ class MKClickPickerCell: UITableViewCell {
     
     private static let identifier = "kClickPickerCellIdentifier"
     
-    static func dequeueReusable(WithTableView tableView:UITableView, _ dataSource: [String]) -> MKClickPickerCell {
+    static func dequeueReusable(WithTableView tableView:UITableView, dataSource: [String]) -> MKClickPickerCell {
         
         let reusableCell = tableView.dequeueReusableCell(withIdentifier: MKClickPickerCell.identifier)
         
         if  let cell = reusableCell {
             return cell as! MKClickPickerCell
         }else{
-            let cell = MKClickPickerCell.init(style: .default, reuseIdentifier: MKClickPickerCell.identifier)
+            let cell = MKClickPickerCell.init(style: .value1, reuseIdentifier: MKClickPickerCell.identifier)
             cell.dataSource = dataSource
+            cell.accessoryType = .disclosureIndicator
+            cell.textLabel?.text = "MKClickPickerCell"
+            cell.detailTextLabel?.text = "🐖"
             return cell
         }
     }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
     }
 }
 
+extension MKClickPickerCell {
+
+    var height: Int {
+        return ((self.dataSource?.count)! + 1) * 48 + 20
+    }
+    
+}

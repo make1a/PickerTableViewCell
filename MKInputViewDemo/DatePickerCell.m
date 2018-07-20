@@ -89,9 +89,10 @@ NSString *const kDataPickerCellIdentifier = @"kDataPickerCellIdentifier";
     if (!_inputAccessoryView) {
         _inputAccessoryView = [[UIToolbar alloc]initWithFrame:(CGRect){0,0,self.frame.size.width,40}];
 //        _inputAccessoryView.barTintColor = [UIColor orangeColor];
+        UIBarButtonItem *cancel = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:nil action:@selector(resignFirstResponder)];
         UIBarButtonItem *space = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
         UIBarButtonItem *finish = [[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(done)];
-        [_inputAccessoryView setItems:@[space,space,finish]];
+        [_inputAccessoryView setItems:@[cancel,space,finish]];
     }
     return _inputAccessoryView;
 }

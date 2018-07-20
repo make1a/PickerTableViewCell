@@ -34,7 +34,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    return 3;
 }
 
 
@@ -54,7 +54,7 @@
         };
         return cell;
         
-    }else if (indexPath.row == 2){
+    }else {
         
         PickerViewCell *cell = [PickerViewCell dequeueReusableWithTableView:tableView withDataSource:@[@[@"a",@"b",@"c",@"d"],@[@"1",@"2",@"3",@"4"],@[@"🐔",@"🐶",@"🐖",@"🐂"]]];
 
@@ -62,13 +62,6 @@
         cell.selectPickerViewBlock = ^(NSArray *selectArray){
             [weakCell setDetailTitle:[selectArray componentsJoinedByString:@""]];
         };
-        
-        return cell;
-    }else{
-        
-        MKClickPickerCell *cell = [MKClickPickerCell dequeueReusableWithTableView:tableView :@[@"男",@"女",@"renyao"]];
-        
-            
         
         return cell;
     }

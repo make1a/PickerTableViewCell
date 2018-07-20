@@ -62,7 +62,9 @@ class MKDatePickerCell: UITableViewCell {
         if  let cell = reusableCell {
             return cell as! MKDatePickerCell
         }else{
-            let cell = MKDatePickerCell.init(style: .default, reuseIdentifier: MKDatePickerCell.identifier)
+            let cell = MKDatePickerCell.init(style: .value1, reuseIdentifier: MKDatePickerCell.identifier)
+            cell.textLabel?.text = "MKDatePickerCell"
+            cell.detailTextLabel?.text = "🐒"
             return cell
         }
     }
@@ -70,6 +72,7 @@ class MKDatePickerCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.accessoryType = .disclosureIndicator
         snpLayoutSubview()
     }
     

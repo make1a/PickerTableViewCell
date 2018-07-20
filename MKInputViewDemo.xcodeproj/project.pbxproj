@@ -31,6 +31,8 @@
 		263501E52100237000585BE4 /* PickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 263501E42100237000585BE4 /* PickerViewCell.m */; };
 		263501E92100729000585BE4 /* MKDatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263501E82100729000585BE4 /* MKDatePickerCell.swift */; };
 		263501F52100897000585BE4 /* MKClickPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263501F42100897000585BE4 /* MKClickPickerCell.swift */; };
+		2661E6C9210185EF00F82C46 /* MKPickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2661E6C8210185EF00F82C46 /* MKPickerViewCell.swift */; };
+		2661E6CB2101AE0C00F82C46 /* SwiftDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2661E6CA2101AE0C00F82C46 /* SwiftDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		263501E72100729000585BE4 /* MKInputViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKInputViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		263501E82100729000585BE4 /* MKDatePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKDatePickerCell.swift; sourceTree = "<group>"; };
 		263501F42100897000585BE4 /* MKClickPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKClickPickerCell.swift; sourceTree = "<group>"; };
+		2661E6C8210185EF00F82C46 /* MKPickerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPickerViewCell.swift; sourceTree = "<group>"; };
+		2661E6CA2101AE0C00F82C46 /* SwiftDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 				2603EA3620FF21B0007BF05D /* AppDelegate.m */,
 				2603EA3820FF21B0007BF05D /* ViewController.h */,
 				2603EA3920FF21B0007BF05D /* ViewController.m */,
+				2661E6CA2101AE0C00F82C46 /* SwiftDemoViewController.swift */,
 				2603EA3B20FF21B0007BF05D /* Main.storyboard */,
 				2603EA3E20FF21B1007BF05D /* Assets.xcassets */,
 				2603EA4020FF21B1007BF05D /* LaunchScreen.storyboard */,
@@ -171,6 +176,7 @@
 				263501E42100237000585BE4 /* PickerViewCell.m */,
 				263501E82100729000585BE4 /* MKDatePickerCell.swift */,
 				263501F42100897000585BE4 /* MKClickPickerCell.swift */,
+				2661E6C8210185EF00F82C46 /* MKPickerViewCell.swift */,
 			);
 			path = MKInputViewDemo;
 			sourceTree = "<group>";
@@ -368,10 +374,12 @@
 				2603EA6A20FF26AD007BF05D /* DatePickerCell.m in Sources */,
 				2603EABA20FF328B007BF05D /* MASViewAttribute.m in Sources */,
 				2603EAB620FF328B007BF05D /* NSArray+MASAdditions.m in Sources */,
+				2661E6CB2101AE0C00F82C46 /* SwiftDemoViewController.swift in Sources */,
 				2603EAB320FF328B007BF05D /* MASCompositeConstraint.m in Sources */,
 				2603EAB420FF328B007BF05D /* MASConstraintMaker.m in Sources */,
 				2603EAB720FF328B007BF05D /* View+MASAdditions.m in Sources */,
 				2603EAB220FF328B007BF05D /* ViewController+MASAdditions.m in Sources */,
+				2661E6C9210185EF00F82C46 /* MKPickerViewCell.swift in Sources */,
 				2603EA6E20FF2FEF007BF05D /* ClickPickerCell.m in Sources */,
 				2603EAB920FF328B007BF05D /* MASViewConstraint.m in Sources */,
 				263501E52100237000585BE4 /* PickerViewCell.m in Sources */,
