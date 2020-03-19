@@ -27,7 +27,6 @@
 		2603EAB820FF328B007BF05D /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAAC20FF328B007BF05D /* MASConstraint.m */; };
 		2603EAB920FF328B007BF05D /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAAE20FF328B007BF05D /* MASViewConstraint.m */; };
 		2603EABA20FF328B007BF05D /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2603EAAF20FF328B007BF05D /* MASViewAttribute.m */; };
-		2603EABB20FF328B007BF05D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2603EAB020FF328B007BF05D /* Info.plist */; };
 		263501E52100237000585BE4 /* PickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 263501E42100237000585BE4 /* PickerViewCell.m */; };
 		263501E92100729000585BE4 /* MKDatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263501E82100729000585BE4 /* MKDatePickerCell.swift */; };
 		263501F52100897000585BE4 /* MKClickPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263501F42100897000585BE4 /* MKClickPickerCell.swift */; };
@@ -98,7 +97,6 @@
 		2603EAAD20FF328B007BF05D /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		2603EAAE20FF328B007BF05D /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		2603EAAF20FF328B007BF05D /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		2603EAB020FF328B007BF05D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		263501E32100237000585BE4 /* PickerViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewCell.h; sourceTree = "<group>"; };
 		263501E42100237000585BE4 /* PickerViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewCell.m; sourceTree = "<group>"; };
 		263501E72100729000585BE4 /* MKInputViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKInputViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 				2603EAAD20FF328B007BF05D /* ViewController+MASAdditions.h */,
 				2603EAAE20FF328B007BF05D /* MASViewConstraint.m */,
 				2603EAAF20FF328B007BF05D /* MASViewAttribute.m */,
-				2603EAB020FF328B007BF05D /* Info.plist */,
 			);
 			name = Masonry;
 			path = Masonry/Masonry;
@@ -337,7 +334,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2603EABB20FF328B007BF05D /* Info.plist in Resources */,
 				2603EA4220FF21B1007BF05D /* LaunchScreen.storyboard in Resources */,
 				2603EA3F20FF21B1007BF05D /* Assets.xcassets in Resources */,
 				2603EA3D20FF21B0007BF05D /* Main.storyboard in Resources */,
@@ -565,7 +561,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MKInputViewDemo/MKInputViewDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -585,7 +581,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.MKInputViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MKInputViewDemo/MKInputViewDemo-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

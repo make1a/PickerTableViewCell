@@ -22,14 +22,14 @@ class MKDatePickerCell: UITableViewCell {
     private static let inputViewRect = CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 220)
     
     lazy var dataPicker: UIDatePicker = {
-        let dataPicker = UIDatePicker.init(frame: inputViewRect)
+        let dataPicker = UIDatePicker.init(frame: MKDatePickerCell.inputViewRect)
         dataPicker.date = Date()
         dataPicker.datePickerMode = .date
         return dataPicker
     }()
     
     lazy var myInputView: UIView = {
-        let view = UIView.init(frame: inputViewRect)
+        let view = UIView.init(frame: MKDatePickerCell.inputViewRect)
         view.backgroundColor = .white
         view.addSubview(self.dataPicker)
         return view
@@ -70,7 +70,7 @@ class MKDatePickerCell: UITableViewCell {
     }
     
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.accessoryType = .disclosureIndicator
         snpLayoutSubview()
@@ -79,7 +79,7 @@ class MKDatePickerCell: UITableViewCell {
     
     ///MARK: action
     
-    func done() {
+    @objc func done() {
         self.resignFirstResponder()
         datePickerSelectBlock?(dataPicker.date)
     }
